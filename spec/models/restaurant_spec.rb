@@ -1,9 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Menu, type: :model do
+RSpec.describe Restaurant, type: :model do
   describe "Associations" do
-    it { should have_many(:menu_items) }
-    it { should belong_to(:restaurant) }
+    it { should have_many(:menus)}
   end
 
   describe "Validations" do
